@@ -1,0 +1,80 @@
+/* ============================================
+   Addis Eats - Styles
+   ============================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8fafc;
+    color: #1e293b;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.app {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.header h1 {
+    font-size: 36px;
+    color: #1a3a5c;
+}
+
+.header p {
+    color: #64748b;
+    font-size: 16px;
+}
+
+/* Menu */
+.menu h2 {
+    font-size: 24px;
+    color: #1a3a5c;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.dish-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 16px;
+}
+
+/* Dish Card */
+.dish {
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    padding: 16px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dish:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.dish h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1a3a5c;
+    margin-bottom: 8px;
+}
+
+.dish p {
+    font-size: 16px;
+    font-weight: 700;
+    color: #16a34a;
+}
